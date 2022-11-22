@@ -9,6 +9,8 @@
     <script type="module" src="/src/my-element.js"></script>
     <script type="module" src="/src/components/rating-htmlelement.js"></script>
     <script type="module" src="/src/components/rating-htmlelement2.js"></script>
+    <script type="module" src="/src/components/rating-litelement.js"></script>
+
     <style>
       span {
         border: 1px solid red;
@@ -62,7 +64,7 @@
     </template>
     <!-- template used ONLY by pre-lit rating-htmlelement -->
 
-    <my-element border>
+    <my-element no-border>
       <h1>Vite + Lit</h1>
     </my-element>
     <hr />
@@ -71,6 +73,9 @@
     >
     <rating-htmlelement2 rating="5">
       <div>This is the light DOM!</div></rating-htmlelement2
+    >
+    <rating-litelement rating="10">
+      <div>This is the light DOM!</div></rating-litelement
     >
     <hr />
   </body>
