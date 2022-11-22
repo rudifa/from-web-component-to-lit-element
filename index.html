@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./src/index.css" />
     <script type="module" src="/src/my-element.js"></script>
     <script type="module" src="/src/components/rating-htmlelement.js"></script>
+    <script type="module" src="/src/components/rating-htmlelement2.js"></script>
     <style>
       span {
         border: 1px solid red;
@@ -18,6 +19,7 @@
     </style>
   </head>
   <body>
+    <!-- template used ONLY by pre-lit rating-htmlelement -->
     <template id="rating-htmlelement-template">
       <style>
         :host {
@@ -58,13 +60,17 @@
         </svg>
       </button>
     </template>
+    <!-- template used ONLY by pre-lit rating-htmlelement -->
 
     <my-element border>
       <h1>Vite + Lit</h1>
     </my-element>
     <hr />
-    <rating-htmlelement rating="10">
+    <rating-htmlelement rating="0">
       <div>This is the light DOM!</div></rating-htmlelement
+    >
+    <rating-htmlelement2 rating="5">
+      <div>This is the light DOM!</div></rating-htmlelement2
     >
     <hr />
   </body>
